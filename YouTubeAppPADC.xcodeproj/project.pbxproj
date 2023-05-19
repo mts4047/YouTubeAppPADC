@@ -13,6 +13,9 @@
 		B801E3D529C2F5B8002A4254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B801E3D329C2F5B8002A4254 /* Main.storyboard */; };
 		B801E3D729C2F5BB002A4254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B801E3D629C2F5BB002A4254 /* Assets.xcassets */; };
 		B801E3DA29C2F5BB002A4254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B801E3D829C2F5BB002A4254 /* LaunchScreen.storyboard */; };
+		B801E3EA29C30713002A4254 /* VideoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B801E3E829C30713002A4254 /* VideoItemTableViewCell.swift */; };
+		B801E3EB29C30713002A4254 /* VideoItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B801E3E929C30713002A4254 /* VideoItemTableViewCell.xib */; };
+		B8FBB33829C45AF9005F7287 /* VideoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB33729C45AF9005F7287 /* VideoDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B801E3D629C2F5BB002A4254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B801E3D929C2F5BB002A4254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B801E3DB29C2F5BB002A4254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B801E3E829C30713002A4254 /* VideoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItemTableViewCell.swift; sourceTree = "<group>"; };
+		B801E3E929C30713002A4254 /* VideoItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoItemTableViewCell.xib; sourceTree = "<group>"; };
+		B8FBB33729C45AF9005F7287 /* VideoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		B801E3CC29C2F5B8002A4254 /* YouTubeAppPADC */ = {
 			isa = PBXGroup;
 			children = (
-				B801E3CD29C2F5B8002A4254 /* AppDelegate.swift */,
+				B801E3E329C30696002A4254 /* TableViewCells */,
+				B801E3E229C2F835002A4254 /* Storyborads */,
+				B801E3E129C2F825002A4254 /* ViewControllers */,
 				B801E3CF29C2F5B8002A4254 /* SceneDelegate.swift */,
-				B801E3D129C2F5B8002A4254 /* ViewController.swift */,
-				B801E3D329C2F5B8002A4254 /* Main.storyboard */,
+				B801E3CD29C2F5B8002A4254 /* AppDelegate.swift */,
 				B801E3D629C2F5BB002A4254 /* Assets.xcassets */,
-				B801E3D829C2F5BB002A4254 /* LaunchScreen.storyboard */,
 				B801E3DB29C2F5BB002A4254 /* Info.plist */,
 			);
 			path = YouTubeAppPADC;
+			sourceTree = "<group>";
+		};
+		B801E3E129C2F825002A4254 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B801E3D129C2F5B8002A4254 /* ViewController.swift */,
+				B8FBB33729C45AF9005F7287 /* VideoDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B801E3E229C2F835002A4254 /* Storyborads */ = {
+			isa = PBXGroup;
+			children = (
+				B801E3D829C2F5BB002A4254 /* LaunchScreen.storyboard */,
+				B801E3D329C2F5B8002A4254 /* Main.storyboard */,
+			);
+			path = Storyborads;
+			sourceTree = "<group>";
+		};
+		B801E3E329C30696002A4254 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B801E3E629C306D4002A4254 /* Nibs */,
+				B801E3E429C306C6002A4254 /* Swifts */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B801E3E429C306C6002A4254 /* Swifts */ = {
+			isa = PBXGroup;
+			children = (
+				B801E3E829C30713002A4254 /* VideoItemTableViewCell.swift */,
+			);
+			path = Swifts;
+			sourceTree = "<group>";
+		};
+		B801E3E629C306D4002A4254 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				B801E3E929C30713002A4254 /* VideoItemTableViewCell.xib */,
+			);
+			path = Nibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B801E3EB29C30713002A4254 /* VideoItemTableViewCell.xib in Resources */,
 				B801E3DA29C2F5BB002A4254 /* LaunchScreen.storyboard in Resources */,
 				B801E3D729C2F5BB002A4254 /* Assets.xcassets in Resources */,
 				B801E3D529C2F5B8002A4254 /* Main.storyboard in Resources */,
@@ -138,6 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B801E3EA29C30713002A4254 /* VideoItemTableViewCell.swift in Sources */,
+				B8FBB33829C45AF9005F7287 /* VideoDetailsViewController.swift in Sources */,
 				B801E3D229C2F5B8002A4254 /* ViewController.swift in Sources */,
 				B801E3CE29C2F5B8002A4254 /* AppDelegate.swift in Sources */,
 				B801E3D029C2F5B8002A4254 /* SceneDelegate.swift in Sources */,
@@ -295,6 +347,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +376,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
